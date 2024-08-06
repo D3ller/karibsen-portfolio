@@ -11,7 +11,15 @@ export default defineNuxtConfig({
         "nuxt-splide",
         "@nuxt/icon",
         "@nuxtjs/turnstile",
+        "@prisma/nuxt"
     ],
+    vite: {
+        resolve: {
+            alias: {
+                '.prisma/client/index-browser': './node_modules/.prisma/client/index-browser.js',
+            },
+        },
+    },
     runtimeConfig: {
         turnstile: {
             secretKey: process.env.TURNSTILE_SECRET_KEY,
