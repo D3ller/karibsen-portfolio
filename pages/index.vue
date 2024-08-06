@@ -22,7 +22,16 @@ useHead({
     {name: 'theme-color', content: '#bababa'},
     {name: 'msapplication-TileColor', content: '#bababa'},
     {name: 'msapplication-TileImage', content: '/ms-icon-144x144.png'},
-    {name: 'apple-mobile-web-app-status-bar-style ', content: 'black-translucent'}
+    {name: 'apple-mobile-web-app-status-bar-style ', content: 'black-translucent'},
+    {name: 'twitter:creator', content: '@karibsenstudio'},
+    {name: 'twitter:site', content: '@karibsenstudio'},
+    {name: 'twitter:card', content: 'summary_large_image'},
+    {name: 'twitter:title', content: 'Corentin - Full-stack developper'},
+    {name: 'twitter:description', content: 'Corentin, full-stack developper based in Paris/Troyes. Passionate about creating beautiful and functional websites and applications.'},
+    {name: 'twitter:image', content: '/icon.png'},
+    {name: 'og:title', content: 'Corentin - Full-stack developper'},
+    {name: 'og:description', content: 'Corentin, full-stack developper based in Paris/Troyes. Passionate about creating beautiful and functional websites and applications.'},
+    {name: 'og:url', content: 'https://karibsen.fr'},
 ]
 })
 

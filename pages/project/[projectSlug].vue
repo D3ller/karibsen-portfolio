@@ -41,7 +41,7 @@ if(project.value) {
     <div class="flex flex-col gap-6"><h1 class="font-Libre lg:text-4xl md:text-3xl text-2xl">{{ project.title }}</h1>
       <p class="font-DM text-sm sm:text-base">{{ project.desc }}</p>
       <div class="flex gap-2 flex-wrap max-sm:items-center">
-        <buttons type="button-primary" :to="project.url">Visit website</buttons>
+        <buttons type="button-primary" :to="project.url" v-if="project.url">Visit website</buttons>
         <buttons type="button-border" :to="project.github" v-if="project.github">Github</buttons>
       </div>
     </div>
