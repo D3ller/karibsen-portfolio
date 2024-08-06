@@ -12,6 +12,20 @@ let email = ref(null);
 let message = ref(null);
 let alert = ref({error: false, message: ''});
 
+useHead({
+  title: 'Corentin - Full-stack developper',
+  description: 'Corentin, full-stack developper based in Paris/Troyes. Passionate about creating beautiful and functional websites and applications.',
+  meta: [
+    {name: 'keywords', content: 'corentin, full-stack, developper, paris, troyes, web, website, application, front-end, back-end'},
+    {name: 'author', content: 'Corentin'},
+    {name: 'viewport', content: 'width=device-width, initial-scale=1'},
+    {name: 'theme-color', content: '#bababa'},
+    {name: 'msapplication-TileColor', content: '#bababa'},
+    {name: 'msapplication-TileImage', content: '/ms-icon-144x144.png'},
+    {name: 'apple-mobile-web-app-status-bar-style ', content: 'black-translucent'}
+]
+})
+
 const icons = ref<{ name: string }[]>([
   {name: 'simple-icons:tailwindcss'},
   {name: 'simple-icons:vuedotjs'},

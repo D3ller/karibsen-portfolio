@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Language from "~/pages/language.vue";
+import Language from "~/components/language.vue";
 
 const route = useRoute();
 const router = useRouter();
@@ -19,6 +19,17 @@ if (err.value) {
 
 if(project.value) {
   console.log(project.value)
+
+  useHead({
+    title: 'Project – '+project.value.title,
+    meta: [
+      {
+        name: 'description',
+        content: project.value.desc
+      }
+    ]
+  })
+
 } else {
   router.push('/');
 }
