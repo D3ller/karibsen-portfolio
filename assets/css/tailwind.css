@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='512' height='512' preserveAspectRatio='none'%3E%3Cstyle%3Erect{fill:rgba(217,217,217,.161)}%3C/style%3E%3Crect width='50%25' height='50%25'/%3E%3Crect width='50%25' height='50%25' x='50%25' y='50%25'/%3E%3C/svg%3E") repeat 50%;
+    background-size: 30px;
+    @apply font-DM;
+}
+
+.button-primary {
+    @apply bg-grey-primary text-white rounded-full;
+}
+
+.button-border {
+    @apply border border-grey-primary border-solid text-grey-primary font-Libre rounded-full;
+}
+
+.button-normal {
+    @apply p-4 font-DM bg-grey-primary text-white rounded focus:shadow-rounded duration-300 active:shadow-rounded w-20 flex justify-center items-center font-bold;
+}
+
+input, textarea {
+    @apply duration-300 active:shadow-rounded focus:shadow-rounded;
+}
